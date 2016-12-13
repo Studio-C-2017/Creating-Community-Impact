@@ -1,15 +1,13 @@
-#Studio-C
+#Creating Community Impact
 
 ##SUMMARY
 
 
 
 ##INSTALL
-
 Currently the website is HTML/CSS/JS, so this code can be run locally on any web browser.
 
 ##AUTHORS
-
 -Kenny Weeks
 -Natalia Lopez
 -Addison Sorca
