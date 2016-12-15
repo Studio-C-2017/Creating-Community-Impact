@@ -43,45 +43,43 @@ p{
 footer p {
     background-color: #273985;
     text-align: center;
-    padding: 30px 0px;
+    padding: 50px 0px;
     color: #fff;
     clear:left;
-    margin-bottom: 0px;
 }
 
+.content{
+    margin: 100px;
+    margin-top: 0px;
+}
 /*-------------------
 2. nav styles
 -------------------*/
 nav {
-    width: 100%;
-	position:relative;
+  width: 100%;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #273985;
-    text-align: center;
-    margin: 0;
-    display:flex;
-    justify-content:space-between;
-    padding: 0 40px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #273985;
+  text-align: center;
 }
 
 nav ul li {
-    list-style: none;
-    float: left;
-    text-align: center;
-    
+  list-style: none;
+  float: left;
+  text-align: center;
+    width: calc(100% / 7);
 }
 
 nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    display: block;
-    padding: 25px 0px;
+  text-decoration: none;
+  color: #fff;
+  display: block;
+  padding: 25px 0px;
 }
 
 nav ul li:hover {
@@ -89,15 +87,17 @@ nav ul li:hover {
 }
 
 #logo {
+  width: px;
   height: 50px;
   position: relative;
+  right: -18px;
 }
 
 #logoText {
   color: #fff;
   float: right;
   text-align: left;
-  font-style: italic;
+  font-family: 'Monotype Corsiva', serif;
 }
 
 #logoWrapper{
@@ -109,67 +109,35 @@ nav ul li:hover {
 /*-------------------
 3. index
 -------------------*/
+#homeHeader{
+  background-image: url("../media/img/coffee_large.jpg");
+  background-size: cover;
+  padding: 12%;
+  margin: 0;
+  font-size: 62pt;
+  color: white;
+}
 
+#brief{
+  margin: 30px;
+  font-size: 16pt;
+  line-height: 30px;
+  font-weight: 300;
+}
 /*-------------------
 4. about
 -------------------*/
-.content{
-    margin: 100px;
-    margin-top: 0px;
-}
-
-.image_header{
-    width: 100%;
-}
 
 /*-------------------
 5. employment
 -------------------*/
-.content{
-    margin: 100px;
-    margin-top: 0px;
-}
-
 .image_header{
     width: 100%;
 }
 /*-------------------
 6. disability
 -------------------*/
-.content{
-    margin: 100px;
-    margin-top: 0px;
-}
-
-.image_header{
-    width: 100%;
-}
-
 
 /*-------------------
 7. resources
 -------------------*/
-
-.description{
-    font-weight: bold;
-}
-
-.link{
-    font-weight: normal;
-    color: #000000;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-a:hover {
-    color: #273985;
-}
-.content{
-    margin: 100px;
-    margin-top: 0px;
-}
-
-.image_header{
-    width: 100%;
-
-}
