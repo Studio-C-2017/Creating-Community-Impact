@@ -1,4 +1,20 @@
-#ATTENTION
-This repository has been replaced by Studio-C-2017/Creating-Community-Impact
-#NOTE TO MEMBERS OF STUDIO C
-Please do not use repositories of company projects from any GitHub account except from Studio-C-2017. Any other repository is unofficial and/or deprecated.
+#Creating Community Impact
+
+#SUMMARY
+
+#INSTALL
+Currently the website is HTML/CSS/JS, so this code can be run locally on any web browser.
+
+#AUTHORS
+
+- Kenny Weeks
+- Natalia Lopez
+- Addison Sorca
+- Raymond Heizelman
+- Lemuel John Aligaen
+- Robert Casarotto
+- Emerald Liu
+- Kaden Kellman
+
+#COPYING / LICENSE
+Client's discretion
