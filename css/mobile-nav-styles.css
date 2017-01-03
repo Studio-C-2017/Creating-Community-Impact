@@ -6,13 +6,11 @@
 
 #mobile-header {
     width: 100vw;
-    background-color: #007ABC;
     position: fixed;
 }
 
 #nav-button {
     width: 48pt;
-    background-color: #007ABC;
     background-image: url(../img/nav-button.svg);
     background-repeat: no-repeat;
     background-position: center;
@@ -28,7 +26,7 @@
     /* Makes #mobile-header visible */
     #mobile-header {
         display: block;
-        background-image:url(../img/logo.svg);
+        /*background-image:url(../img/logo.svg);*/
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
