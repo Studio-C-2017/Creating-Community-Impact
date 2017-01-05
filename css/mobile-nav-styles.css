@@ -1,7 +1,7 @@
-
 #mobile-header, #nav-button {
     height: 48pt;
     overflow: hidden;
+    display: none;
 }
 
 #mobile-header {
@@ -17,16 +17,11 @@
     background-size: cover;
 }
 
-#nav-button:hover {
-    /*background-image: url(../img/nav-button-reverse.svg);*/
-}
-
 @media (max-width: 700px) {
     
     /* Makes #mobile-header visible */
     #mobile-header {
         display: block;
-        /*background-image:url(../img/logo.svg);*/
         background-repeat: no-repeat;
         background-size: contain;
         background-position: center;
@@ -37,43 +32,38 @@
         transition: transform 0.33s;
     }
     
+    #nav-button {
+        display: block;
+    }
+    
     nav {
         left: -250px;
         top: 0;
-        color: #333;
         margin: 0;
         position: fixed;
         height: 100vh;
-        background-color: #007ABC;
         overflow: scroll;
     }
     
     nav ul {
-        display: block;
         padding: 0;
-        margin-top: 18pt;
     }
     
     nav ul li {
+        display: block;
+        width: 100%;
     }
     
     nav ul li a {
+        display: block;
         text-decoration: none;
         box-sizing: border-box;
         color: white;
         display: block;
-        font-size: 24pt;
+        font-size: 20pt;
         text-align: left;
-        padding: 12pt;
+        padding: 8pt 10pt;
         width: 100%;
     }
     
-    nav ul li a:hover {
-        background-color: white;
-        color: #007ABC;
-    }
-    
-    main {
-        padding-top: 48pt;
-    }
 }
