@@ -1,3 +1,20 @@
+
+#logoWrapper {
+    text-align: left;
+    width: 100%;
+}
+
+#logo {
+    right: 0;
+    padding: 0 6pt;
+    display: inline-block;
+}
+
+#logoText {
+    float: none;
+    display: inline-block;
+}
+
 #mobile-header, #nav-button {
     height: 48pt;
     overflow: hidden;
