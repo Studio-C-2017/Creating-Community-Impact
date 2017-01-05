@@ -1,0 +1,69 @@
+#mobile-header, #nav-button {
+    height: 48pt;
+    overflow: hidden;
+    display: none;
+}
+
+#mobile-header {
+    width: 100vw;
+    position: fixed;
+}
+
+#nav-button {
+    width: 48pt;
+    background-image: url(../img/nav-button.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@media (max-width: 700px) {
+    
+    /* Makes #mobile-header visible */
+    #mobile-header {
+        display: block;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    
+    #nav-button-container, nav {
+        width: 250px;
+        transition: transform 0.33s;
+    }
+    
+    #nav-button {
+        display: block;
+    }
+    
+    nav {
+        left: -250px;
+        top: 0;
+        margin: 0;
+        position: fixed;
+        height: 100vh;
+        overflow: scroll;
+    }
+    
+    nav ul {
+        padding: 0;
+    }
+    
+    nav ul li {
+        display: block;
+        width: 100%;
+    }
+    
+    nav ul li a {
+        display: block;
+        text-decoration: none;
+        box-sizing: border-box;
+        color: white;
+        display: block;
+        font-size: 20pt;
+        text-align: left;
+        padding: 8pt 10pt;
+        width: 100%;
+    }
+    
+}
