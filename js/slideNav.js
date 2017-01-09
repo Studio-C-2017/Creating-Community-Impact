@@ -34,7 +34,7 @@ function slideout() {
     'use strict';
     nav.style.transform = "translate(0)";
     navButtonContainer.style.transform = "translate(0)";
-    navButton.style.backgroundImage = "url(img/nav-button.svg)";
+    //navButton.style.backgroundImage = "url(img/nav-button.svg)";
     onpage = false;
 }
 
