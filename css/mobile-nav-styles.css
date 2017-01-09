@@ -19,6 +19,7 @@
     height: 48pt;
     overflow: hidden;
     display: none;
+    bottom: 0;
 }
 
 #mobile-header {
@@ -29,6 +30,7 @@
 #nav-button {
     width: 48pt;
     background-image: url(../img/nav-button.svg);
+    background-color: black;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -55,7 +57,6 @@
     
     nav {
         left: -250px;
-        top: 0;
         margin: 0;
         position: fixed;
         height: 100vh;
@@ -71,7 +72,7 @@
         width: 100%;
     }
     
-    nav ul li a {
+    nav ul li a, #logoWrapper {
         display: block;
         text-decoration: none;
         box-sizing: border-box;
@@ -79,8 +80,13 @@
         display: block;
         font-size: 20pt;
         text-align: left;
-        padding: 8pt 10pt;
+        padding: 4pt 8pt;
         width: 100%;
+    }
+    
+    #logoWrapper {
+        font-size: 12pt;
+        padding-bottom: 15pt;
     }
     
 }
