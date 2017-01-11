@@ -18,17 +18,24 @@ TABLE OF CONTENTS
 }
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
+html, body {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
 body{
   margin: 0;
   background-color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
 }
 
 h1{
-  font-size: 45pt;
-  font-family: 'Monotype Corsiva',serif;
+  font-size: 25pt;
+  font-family: sans-serif;
   text-align: center;
+  font-weight:lighter;
 }
 
 .sub-title{
@@ -50,10 +57,46 @@ footer p {
 }
 
 .content{
-    margin: 30px 100px;
+  width:100%;
+  height:20em;
+  background-image:url("../media/img/mountain_large.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  background-attachment:fixed;
+
 }
 
-@media screen and (max-width: 1000px) {
+.text-body {
+  width:100%;
+  height:auto;
+  font-weight:lighter;
+  font-family:sans-serif;
+  line-height:30px;
+  padding:3em 0px 3em 0px;
+}
+
+#image-break {
+  width:100%;
+  height:20em;
+  background-image:url("../media/img/mountain_large.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  background-attachment:fixed;
+}
+
+.text-body-p {
+  width:60%;
+  margin:auto;
+}
+
+#text-body-sec {
+}
+
+
+
+/*@media screen and (max-width: 1000px) {
     .content {
         margin: 40px;
     }
@@ -73,7 +116,7 @@ footer p {
     h1 {
         font-size: 30pt;
     }
-}
+}*/
 
 /*-------------------
 2. nav styles
@@ -132,17 +175,16 @@ nav ul li:hover {
 /*-------------------
 3. index
 -------------------*/
-.header{
-  padding: 10%;
-  margin: 0;
-  font-size: 62pt;
-  color: white;
-  background-size: cover;
+
+#home-image {
+  width:100%;
+  height:20em;
+  background-image:url("../media/img/coffee_large.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
 }
 
-#index_header{
-  background-image: url("../media/img/coffee_large.jpg");
-}
 
 #brief{
   margin: 30px;
@@ -159,7 +201,7 @@ nav ul li:hover {
     font-size: 14pt;
     font-weight: 300;
 }
-@media screen and (max-width: 1000px) {
+/*@media screen and (max-width: 1000px) {
     #homeHeader{
         background-image: url("../media/img/coffee_small.jpg");
         background-size: cover;
@@ -168,18 +210,33 @@ nav ul li:hover {
         font-size: 45pt;
         color: white;
     }
-}
+}*/
 
 /*-------------------
 4. about
 -------------------*/
 
+
 /*-------------------
 5. employment
 -------------------*/
-.image_header{
-    width: 100%;
-    height: 80%;
+#empl-img {
+  width: 100%;
+  height: 20em;
+  background-image:url("../media/img/talking_large.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  background-attachment:fixed;
+  padding-top:30px;
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+}
+
+.header-text {
+  color:#fff;
+  text-align:center;
+  margin-top:0;
+  letter-spacing:5px;
 }
 /*-------------------
 6. disability
@@ -187,4 +244,10 @@ nav ul li:hover {
 
 /*-------------------
 7. resources
+-------------------*/
+
+
+
+/*-------------------
+8. Employment
 -------------------*/
