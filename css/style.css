@@ -12,10 +12,7 @@ TABLE OF CONTENTS
 /*-------------------
 1. universal styles
 -------------------*/
-@font-face {
-  font-family:'Monotype Corsiva', serif;
-  src: url('../media/font/MonotypeCorsiva.ttf');
-}
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 
 html, body {
@@ -33,14 +30,11 @@ body{
 
 h1{
   font-size: 25pt;
-  font-family: sans-serif;
+  font-family: "Lato" ,sans-serif;
   text-align: center;
-  font-weight:lighter;
-}
-
-.sub-title{
-  font-size: 15pt;
-  font-weight: 600;
+  font-weight:bold;
+  text-transform: uppercase;
+  font-size: 4em;
 }
 
 p{
@@ -56,9 +50,9 @@ footer p {
     margin: 0;
 }
 
-.content{
+#about-image{
   width:100%;
-  height:20em;
+  height:auto;
   background-image:url("../media/img/mountain_large.jpg");
   background-repeat:no-repeat;
   background-position:center center;
@@ -93,30 +87,6 @@ footer p {
 
 #text-body-sec {
 }
-
-
-
-/*@media screen and (max-width: 1000px) {
-    .content {
-        margin: 40px;
-    }
-    
-    p {
-        font-size: 13pt;
-    }
-}
-
-@media screen and (max-width: 500px) {
-    .content {
-        margin: 10px;
-    }
-    p {
-        font-size: 14pt;
-    }
-    h1 {
-        font-size: 30pt;
-    }
-}*/
 
 /*-------------------
 2. nav styles
@@ -178,29 +148,119 @@ nav ul li:hover {
 
 #home-image {
   width:100%;
-  height:20em;
+  height:auto;
   background-image:url("../media/img/coffee_large.jpg");
   background-size:cover;
   background-repeat:no-repeat;
   background-position:center center;
+  background-attachment:fixed;
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.4);
+}
+
+.header-text {
+  color:#fff;
+  text-align:center;
+  margin-top:0;
+  letter-spacing:5px;
+  padding:2.5em 0px;
 }
 
 
 #brief{
-  margin: 30px;
-  font-size: 16pt;
-  line-height: 30px;
-  font-weight: 300;
+  font-size:16pt;
+  line-height:30px;
+  font-weight:lighter;
+  font-family:sans-serif;
+  width:65%;
+  margin:auto;
+  padding:1.5em 0px 3em 0px;
 }
 
-#featuredSer, #indexp{
-    text-align: center;
+#testimon {
+  width:100%;
+  padding:1.5em 0px 1.5em 0px;
+  background-image:url("../media/img/coffee_large.jpg");
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.6);
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment:fixed;
 }
 
-#featuredSer p, #indexp{
-    font-size: 14pt;
-    font-weight: 300;
+#testimon > h1 {
+  color:#fff;
 }
+
+#videos{
+  display:flex; 
+  justify-content: center;
+}
+
+iframe{
+  margin: 0 30px;
+  width: 500px; 
+  height: 300px;
+}
+.gutter {
+  content:"";
+  display:table;
+  clear:both;
+}
+
+#services {
+  width:100%;
+  height:auto;
+  background-color:#ececec;
+  color:#525252;
+  text-align:center;
+  padding-bottom:15px;
+}
+
+#fe-se {
+  float:left;
+  width:33.33%;
+  height:20em;
+  background-color:#ececec;
+}
+
+#was-se {
+  float:left;
+  width:33.33%;
+  height:20em;
+  background-color:#ececec;
+}
+
+#star-se {
+  float:left;
+  width:33.33%;
+  height:20em;
+  background-color:#ececec;
+}
+
+#fe-se > p, #was-se > p, #star-se > p {
+  text-align:center;
+  width:80%;
+  margin:auto;
+}
+
+button {
+  color:#525252;
+  text-transform:uppercase;
+  text-align:center;
+  padding:10px;
+  font-size:19px;
+  border:1px solid #525252;
+  background-color:transparent;
+  border-radius:5px;
+  margin-top:25px;
+  font-family: "Lato", sans-serif;
+}
+
+button:hover{
+  color: white;
+  background-color: #525252;
+}
+
 /*@media screen and (max-width: 1000px) {
     #homeHeader{
         background-image: url("../media/img/coffee_small.jpg");
@@ -220,34 +280,275 @@ nav ul li:hover {
 /*-------------------
 5. employment
 -------------------*/
-#empl-img {
+#emply-image {
   width: 100%;
-  height: 20em;
+  height: auto;
   background-image:url("../media/img/talking_large.jpg");
   background-repeat:no-repeat;
   background-position:center center;
   background-size:cover;
   background-attachment:fixed;
-  padding-top:30px;
   box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
 }
 
-.header-text {
+#vo-se {
+  width:100%;
+  height:auto;
+  font-weight:lighter;
+  font-family:sans-serif;
+}
+
+.sub-title {
+  margin:auto;
+  margin-top:30px;
+  margin-bottom:30px;  
+  text-align:center;
+  font-family: "Lato", sans-serif;
+}
+
+#sec-sec {
+  margin-bottom:40px;
+}
+
+#vo-int {
+  width:70%;
+  margin:auto;
+  font-size:19px;
+  line-height:25px;
+}
+
+.example {
+  width:70%;
+  margin:auto;
+  font-size:16px;
+  line-height:25px;
+}
+
+#as-se {
+  width:50%;
+  height:auto;
+  float:left;
+  font-weight:lighter;
+  font-family:sans-serif;
+}
+
+#as-int {
+  width:80%;
+  margin:auto;
+  line-height:25px;
+}
+
+#por-se {
+  float:left;
+  width:50%;
+  height:auto;
+  font-weight:lighter;
+  font-family:sans-serif;
+}
+
+#por-int {
+  width:80%;
+  margin:auto;
+  line-height:25px;
+}
+
+#sec-img-break, #third-img-break {
+  width:100%;
+  height:auto;
+  background-image:url("../media/img/talking_large.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  background-attachment:fixed;
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+}
+
+.img-txt-break {
   color:#fff;
   text-align:center;
-  margin-top:0;
-  letter-spacing:5px;
+  padding:3em 0;
+  font-size: 3em;
+  line-height: normal;
 }
+
+.jbd-p {
+  width:70%;
+  height:auto;
+  margin:auto;
+  line-height:25px;
+  font-family:sans-serif;
+  font-weight:lighter;
+  font-size:18px;
+}
+
+#jdb-p-final {
+  margin-bottom:40px;
+}
+
+.jc-p {
+  width:70%;
+  margin:auto;
+  line-height:25px;
+  font-weight:lighter;
+  font-family:sans-serif;
+  font-size:18px;
+}
+
+#exm-final {
+  margin-bottom:40px;
+  font-weight:lighter;
+  font-size:16px;
+  font-family:sans-serif;
+}
+
 /*-------------------
 6. disability
 -------------------*/
+#future-p{
+  padding: 1em 0 3em 0;
+}
+#opp-body{
+  padding-top: 0;
+}
+#dis-image {
+  width:100%;
+  height:auto;
+  background-image:url("../media/img/hands_large.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment:fixed;
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.3);
+}
 
+.dis-img-break{
+  width:100%;
+  height:auto;
+  background-image:url("../media/img/hands_large.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  background-attachment:fixed;
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+}
+
+#dis-text-body{
+  padding-bottom: 3em;
+}
 /*-------------------
 7. resources
 -------------------*/
 
+#res-image {
+  width:100%;
+  height:auto;
+  background-image:url("../media/img/lake_large.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment:fixed;
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.3);
+}
 
+.resources-page{
+  width: 60%;
+  text-align: center;
+  margin: auto;
+}
 
+.links a{
+  color: #008080;
+  text-decoration: none;
+}
+
+.res-img-break{
+  width:100%;
+  height:auto;
+  background-image:url("../media/img/lake_large.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  background-attachment:fixed;
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+}
 /*-------------------
 8. Employment
 -------------------*/
+
+/*Opportunities*/
+
+#op-image {
+  width:100%;
+  height:auto;
+  background-image:url("../media/img/comp_large.jpg");
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-attachment:fixed;
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.3);
+}
+
+.opp-img-break{
+  width:100%;
+  height:auto;
+  background-image:url("../media/img/comp_large.jpg");
+  background-repeat:no-repeat;
+  background-position:center center;
+  background-size:cover;
+  background-attachment:fixed;
+  box-shadow:inset 0 0 0 800px rgba(0,0,0,0.2);
+}
+
+#opp-text-body{
+  padding-top: 0.8em;
+}
+
+/* Tablet Styles */
+@media screen and (max-width: 1000px) {
+    #fe-se, #was-se, #star-se {
+      width: 33.33%;
+      margin: auto;
+      height: initial;
+    }
+
+}
+
+
+/* Mobile Styles */
+
+@media screen and (max-width: 500px) {
+    .content {
+        margin: 10px;
+    }
+
+    h1 {
+        font-size: 30pt;
+    }
+
+    .text-body-p {
+        width: 90%;
+    }
+
+    #brief {
+        font-size: 12pt;
+        width: 85%;
+    }
+
+    #fe-se, #was-se, #star-se {
+      float: none;
+      width: 90%;
+      margin: auto;
+      height: initial;
+    }
+
+    #videos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe{
+      width: 300px;
+      margin: 5% auto;
+
+    }
+}
