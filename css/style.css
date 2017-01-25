@@ -50,6 +50,10 @@ footer p {
     margin: 0;
 }
 
+li {
+  list-style-type: none;
+}
+
 #about-image{
   width:100%;
   height:auto;
@@ -503,6 +507,13 @@ button:hover{
   padding-top: 0.8em;
 }
 
+/*Contacts*/
+
+#contact a{
+  color: #008080;
+  text-decoration: none;
+}
+
 /* Tablet Styles */
 @media screen and (max-width: 1000px) {
     #fe-se, #was-se, #star-se {
@@ -551,4 +562,15 @@ button:hover{
       margin: 5% auto;
 
     }
+
+    #as-se {
+      width: 100%;
+      padding-bottom: 5%;
+    }
+
+    #por-se {
+      float: none; 
+      width: 100%;     
+    }
+
 }
